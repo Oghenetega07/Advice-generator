@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: hsl(218, 23%, 16%);
+  --card: hsl(217, 19%, 24%);
+  --text: hsl(193, 38%, 86%);
+  --green: hsl(150, 100%, 66%);
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--bg);
+
+  font-family: 'Manrope', sans-serif;
+
+  padding: 1rem;
+}
+
+.card {
+  position: relative;
+
+  max-width: 540px;
+  width: 100%;
+
+  background-color: var(--card);
+
+  padding: 3rem 2rem 4rem;
+
+  border-radius: 15px;
+
+  text-align: center;
+}
+
+.advice-id {
+  color: var(--green);
+
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+
+  margin-bottom: 1.5rem;
+}
+
+.advice-text {
+  color: var(--text);
+
+  font-size: 1.75rem;
+  font-weight: 800;
+
+  line-height: 1.5;
+
+  margin-bottom: 2rem;
+}
+
+.divider {
+    display: block;
+    margin: 0 auto 2rem;
+    max-width: 100%;
+}
+
+.dice-btn {
+  position: absolute;
+
+  bottom: -30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: var(--green);
+
+  cursor: pointer;
+
+  font-size: 1.5rem;
+
+  transition: 0.3s ease;
+}
+
+.dice-btn:hover {
+  box-shadow: 0 0 30px var(--green);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  .advice-text {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 2.5rem 1.5rem 4rem;
+  }
+}

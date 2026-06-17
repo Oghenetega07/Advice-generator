@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="card">
+      <h2 class="advice-id">ADVICE #<span id="advice-id">117</span></h2>
+
+      <p class="advice-text">
+        "It is easy to sit up and take notice, what's difficult is getting up
+        and taking action."
+      </p>
+
+      <picture>
+        <source
+        media="(min-width: 540px)"
+        srcset="./images/pattern-divider-desktop.svg"
+        />
+        <img
+          src="./images/pattern-divider-mobile.svg"
+          alt="Pattern divider"
+          class="divider"
+        />
+      </picture>
+
+      <!-- 🎲 -->
+      <button class="dice-btn" id="dice-btn" aria-label="Generate new advice">
+        <img src="./images/icon-dice.svg" alt="Dice icon" />
+      </button>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Asarhasa Blessing</a>.
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
